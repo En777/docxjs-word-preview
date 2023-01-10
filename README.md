@@ -39,6 +39,10 @@ renderAsync(
         ignoreWidth: boolean = false, //disables rendering width of page
         ignoreHeight: boolean = false, //disables rendering height of page
         ignoreFonts: boolean = false, //disables fonts rendering
+
+        // new feature
+        ignorePageMargins: boolean = true, // ignore Page Margins for batter experience on mobile phone
+
         breakPages: boolean = true, //enables page breaking on page breaks
         ignoreLastRenderedPageBreak: boolean = true, //disables page breaking on lastRenderedPageBreak elements
         experimental: boolean = false, //enables experimental features (tab stops calculation)
