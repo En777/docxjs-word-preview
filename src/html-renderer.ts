@@ -270,7 +270,7 @@ export class HtmlRenderer {
 		var elem = this.createElement("section", { className });
 
 		if (props) {
-			if (props.pageMargins) {
+			if (props.pageMargins && this.options.ignorePageMargins) {
 				elem.style.paddingLeft = props.pageMargins.left;
 				elem.style.paddingRight = props.pageMargins.right;
 				elem.style.paddingTop = props.pageMargins.top;

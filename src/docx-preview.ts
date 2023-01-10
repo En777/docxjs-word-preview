@@ -4,6 +4,7 @@ import { HtmlRenderer } from './html-renderer';
 
 export interface Options {
     inWrapper: boolean;
+    ignorePageMargins: boolean;
     ignoreWidth: boolean;
     ignoreHeight: boolean;
     ignoreFonts: boolean;
@@ -31,6 +32,7 @@ export const defaultOptions: Options = {
     experimental: false,
     className: "docx",
     inWrapper: true,
+    ignorePageMargins: true,
     trimXmlDeclaration: true,
     ignoreLastRenderedPageBreak: true,
     renderHeaders: true,
