@@ -312,7 +312,7 @@ export class HtmlRenderer {
 			const sectionElement = this.createSection(this.className, props);
 			this.renderStyleValues(document.cssStyle, sectionElement);
 
-			this.options.renderHeaders && this.renderHeaderFooter(props.headerRefs, props,
+			this.options.renderHeaders && this.renderHeaderFooter(props?.headerRefs, props,
 				result.length, prevProps != props, sectionElement);
 
 			var contentElement = this.createElement("article");
@@ -327,7 +327,7 @@ export class HtmlRenderer {
 				this.renderNotes(this.currentEndnoteIds, this.endnoteMap, sectionElement);
 			}
 
-			this.options.renderFooters && this.renderHeaderFooter(props.footerRefs, props,
+			this.options.renderFooters && this.renderHeaderFooter(props?.footerRefs, props,
 				result.length, prevProps != props, sectionElement);
 
 			result.push(sectionElement);
