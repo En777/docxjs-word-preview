@@ -1,10 +1,12 @@
-[![npm version](https://badge.fury.io/js/docx-preview.svg)](https://www.npmjs.com/package/docx-preview)
+[![npm version](https://badge.fury.io/js/docx-preview-lib.svg)](https://www.npmjs.com/package/docx-preview-lib)
 [![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-blue?style=flat&logo=adguard)](https://war.ukraine.ua/)
 
 # docxjs
 Docx rendering library
 
 Demo - https://volodymyrbaydalka.github.io/docxjs/
+
+npm - https://www.npmjs.com/package/docx-preview-lib
 
 Usage
 -----
@@ -25,6 +27,8 @@ Usage
     <div id="container"></div>
     ...
 </body>
+
+// or npm install docx-preview-lib
 ```
 API
 ---
