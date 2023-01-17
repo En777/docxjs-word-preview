@@ -2732,7 +2732,7 @@ class HtmlRenderer {
             const props = section.sectProps || document.props;
             const sectionElement = this.createSection(this.className, props);
             this.renderStyleValues(document.cssStyle, sectionElement);
-            this.options.renderHeaders && this.renderHeaderFooter(props.headerRefs, props, result.length, prevProps != props, sectionElement);
+            this.options.renderHeaders && this.renderHeaderFooter(props === null || props === void 0 ? void 0 : props.headerRefs, props, result.length, prevProps != props, sectionElement);
             var contentElement = this.createElement("article");
             this.renderElements(section.elements, contentElement);
             sectionElement.appendChild(contentElement);
@@ -2742,7 +2742,7 @@ class HtmlRenderer {
             if (this.options.renderEndnotes && i == l - 1) {
                 this.renderNotes(this.currentEndnoteIds, this.endnoteMap, sectionElement);
             }
-            this.options.renderFooters && this.renderHeaderFooter(props.footerRefs, props, result.length, prevProps != props, sectionElement);
+            this.options.renderFooters && this.renderHeaderFooter(props === null || props === void 0 ? void 0 : props.footerRefs, props, result.length, prevProps != props, sectionElement);
             result.push(sectionElement);
             prevProps = props;
         }
