@@ -45,7 +45,7 @@ renderAsync(
         ignoreFonts: boolean = false, //disables fonts rendering
 
         // new feature
-        ignorePageMargins: boolean = true, // ignore Page Margins for batter experience on mobile phone
+        ignorePageMargins: boolean = true, // ignore Page Margins for better experience on mobile phone, page wider
 
         breakPages: boolean = true, //enables page breaking on page breaks
         ignoreLastRenderedPageBreak: boolean = true, //disables page breaking on lastRenderedPageBreak elements
